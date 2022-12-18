@@ -1,9 +1,14 @@
 import os
 import openai
 import config
+from dotenv import load_dotenv
 
+def configure():
+  load_dotenv()
+  
+# openai.api_key = config.OPENAI_API_KEY
+os.getenv('OPENAI_API_KEY')
 
-openai.api_key = config.OPENAI_API_KEY
 
 
 def generateBlogTopics(prompt1):
