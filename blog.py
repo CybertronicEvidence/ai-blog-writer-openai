@@ -3,8 +3,7 @@ import openai
 import config
 
 
-# openai.api_key = config.OPENAI_API_KEY
-os.environ["openai.api key"] = "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"
+openai.api_key = config.OPENAI_API_KEY
 
 
 def generateBlogTopics(prompt1):
