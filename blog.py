@@ -1,6 +1,7 @@
 import os
 import openai
 import config
+import dotenv
 from dotenv import load_dotenv
 
 def configure():
