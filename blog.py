@@ -1,22 +1,22 @@
 import os
 import openai
 import config
-import configparser
+# import configparser
 
 # from dotenv import load_dotenv
 
 # def configure():
 #   load_dotenv()
   
-# openai.api_key = config.OPENAI_API_KEY
+openai.api_key = config.OPENAI_API_KEY
 # os.getenv('OPENAI_API_KEY')
 
-def get_api_key():
-  config = configparser.ConfigParser()
-  config.read('config.ini')
-  return config[openai][OPENAI_API_KEY]
+# def get_api_key():
+#   config = configparser.ConfigParser()
+#   config.read('config.ini')
+#   return config[openai][OPENAI_API_KEY]
 
-openai.api_key = get_api_key()  
+# openai.api_key = get_api_key()  
 
 def generateBlogTopics(prompt1):
     response = openai.Completion.create(
