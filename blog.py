@@ -3,7 +3,6 @@ import openai
 import config
 import configparser
 
-# import dotenv
 # from dotenv import load_dotenv
 
 # def configure():
