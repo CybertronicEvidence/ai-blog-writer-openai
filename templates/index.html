@@ -26,14 +26,11 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="mt-5">Enoch Online Blog Writing Tool</h1>
+      <h1 class="mt-5">Enoch Respondent Tool</h1>
 
       <p>
-        The Enoch blog writing tool will allow you to enter a blog topic and
-        keywords --- and get in return a full blog that you can use anywhere.
-        The tool intiially provides a list of topic ideas to choose from, once
-        you select a topic, you can go ahead and generate a full content AI
-        blog.
+        The Enoch Respondent tool will allow you to enter a topic and
+        keywords --- and get in return a full idea that you can use anywhere.
       </p>
 
       <div class="row">
@@ -41,32 +38,32 @@
           <form class="" action="/" method="post">
             <div class="mb-3">
               <label for="blogTopic" class="form-label"
-                >What topic do you want to get blog ideas on?</label
+                >What topic do you want to get an idea on?</label
               >
               <input
                 type="text"
                 class="form-control"
                 id="blogTopic"
                 name="blogTopic"
-                placeholder="Enter a blog topic"
+                placeholder="Enter a prompt"
               />
             </div>
             <input type="hidden" name="form1" value="form1" />
 
             <button type="submit" id="blogTopicButton" class="btn btn-primary">
-              Generate Blog Ideas
+              Enter
             </button>
           </form>
         </div>
 
-        <div class="col-lg-6">1. {{blogTopicIdeas|safe}}</div>
+        <div class="col-lg-6">{{blogTopicIdeas|safe}}</div>
       </div>
 
       <br />
       <hr />
       <br />
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-6">
           <form class="" action="/" method="post">
             <div class="mb-3">
@@ -122,7 +119,7 @@
 
         <div class="col-lg-6">{{blogExpanded|safe}}</div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
