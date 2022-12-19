@@ -20,10 +20,10 @@ openai.api_key = config.OPENAI_API_KEY
 
 def generateBlogTopics(prompt1):
     response = openai.Completion.create(
-      engine="davinci-instruct-beta-v3",
+      engine="text-davinci-003",
       prompt="{}.".format(prompt1),
       temperature=0.7,
-      max_tokens=100,
+      max_tokens=3997,
       top_p=1,
       frequency_penalty=0,
       presence_penalty=0
